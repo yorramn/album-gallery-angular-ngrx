@@ -26,5 +26,9 @@ export class GalleryComponent implements OnInit {
         }
       );
   }
+  onAlbumChange(id:number)
+  {
+    this.albums$ = this.store.pipe(select(galleryByAlbumId(id)))
+  }
 
 }

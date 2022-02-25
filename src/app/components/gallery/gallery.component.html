@@ -1,6 +1,9 @@
 <div class="container">
     <div class="row justify-content-center">
-        <select class="form-select form-select-md mt-3 w-50" [ngModel]="albumSelectedId">
+        <select class="form-select form-select-md mt-3 w-50" 
+        [ngModel]="albumSelectedId"
+        (ngModelChange)="onAlbumChange($event)"
+        >
             <option value="-1">Select Gallery</option>
             <option *ngFor="let album of albums_id$ | async" [value]="album">{{album}}</option>
         </select>
