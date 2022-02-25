@@ -6,6 +6,6 @@ export const galleryRootSelector = (state: AppState) => state.gallery;
 export const uniqueAlbumsId = createSelector(
     galleryRootSelector,
     (gallery : Gallery[]) => {
-        return [... new Set(gallery.map(_ => _.album_id))];
+        return [... new Set(gallery.map(_ => _.albumId))];
     }
 )

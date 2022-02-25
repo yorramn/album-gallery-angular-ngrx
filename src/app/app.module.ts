@@ -7,10 +7,12 @@ import { galleryReducer } from './store/gallery.reducers';
 
 import {HttpClientModule} from '@angular/common/http'
 import { GalleryService } from './services/gallery.service';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

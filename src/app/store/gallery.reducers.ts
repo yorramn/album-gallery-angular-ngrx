@@ -6,7 +6,7 @@ export const initialState : Gallery[] = [];
 
 const _galleryReducer = createReducer(initialState,
     on(retrievedGallery, (state, {allGallery})=> {
-        return [{...allGallery}];
+        return [...allGallery];
     })
 );
 export function galleryReducer(state: any, actions : any){
