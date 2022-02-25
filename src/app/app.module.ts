@@ -8,7 +8,7 @@ import { galleryReducer } from './store/gallery.reducers';
 import {HttpClientModule} from '@angular/common/http'
 import { GalleryService } from './services/gallery.service';
 import { GalleryComponent } from './components/gallery/gallery.component';
-
+import {FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +17,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     StoreModule.forRoot({gallery : galleryReducer})
   ],
   providers: [
