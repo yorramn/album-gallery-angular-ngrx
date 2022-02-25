@@ -10,7 +10,7 @@ import {retrievedGallery} from '../../store/gallery.actions'
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-
+  public albumSelectedId = -1
   public albums_id$ = this.store.pipe(select(uniqueAlbumsId))
   constructor(
     private galleryService: GalleryService,
