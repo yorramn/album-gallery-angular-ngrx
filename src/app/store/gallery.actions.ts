@@ -3,5 +3,5 @@ import { Gallery } from "../models/gallery.model";
 
 export const retrievedGallery = createAction(
     '[Gallery API] API Success',
-    props<{allGallery : Gallery}>()
+    props<{allGallery : Gallery[]}>()
 );
